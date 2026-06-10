@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A4 with 3mm bleed: 216mm x 303mm ; internal artwork is shifted by 3mm (30 units) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="216mm" height="303mm" viewBox="0 0 2160 3030" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FBF0E6"/>
+      <stop offset="1" stop-color="#F5E7D6"/>
+    </linearGradient>
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0" result="mono"/>
+      <feBlend mode="multiply" in="SourceGraphic" in2="mono"/>
+    </filter>
+    <style>
+      /* 保持手写感的基础字体回退，印刷时可替换为手写体或嵌入字体 */
+      .title { font-family: Kai, 'STKaiti', 'Microsoft YaHei', serif; font-weight:700; fill:#D95B3C; }
+      .sub { font-family: 'PingFang SC','Microsoft YaHei', sans-serif; fill:#5A3E36; }
+    </style>
+  </defs>
+
+  <!-- 背景与出血说明（画布整宽） -->
+  <rect x="0" y="0" width="2160" height="3030" fill="url(#paper)"/>
+
+  <!-- 将之前的 210x297 内容整体内缩 30 px（等于 3mm 的出血边） -->
+  <g transform="translate(30,30)">
+
+    <!-- 主要内容（与预览一致） -->
+    <rect x="0" y="0" width="2100" height="2970" fill="none"/>
+
+    <!-- 左上标题区 -->
+    <g id="title" transform="translate(60,90)">
+      <text x="0" y="40" class="title" font-size="120">枣核</text>
+      <text x="4" y="110" class="sub" font-size="30">从“枣核大”的小英雄看智慧与勇气</text>
+      <line x1="0" y1="130" x2="680" y2="130" stroke="#D95B3C" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    </g>
+
+    <!-- 左侧主文本列 -->
+    <g id="left_col" transform="translate(60,170)">
+      <rect x="0" y="0" width="1200" height="2320" rx="14" ry="14" fill="none" stroke="#F0DCC9" stroke-width="2"/>
+      <text x="24" y="46" class="sub" font-size="26" font-weight="700">故事摘要</text>
+      <text x="24" y="86" class="sub" font-size="20">
+        《枣核》讲述了一个只有枣核大小的孩子凭勒劳，靠着机智与勇敢帮助乡亲、惩治贪官的故事。故事通过关键情节与生动动作、语言描写，突显出“人的本领与勇气与身材无关”的主题。
+      </text>
+
+      <text x="24" y="170" class="sub" font-size="26" font-weight="700">关键情节速记</text>
+      <text x="36" y="210" class="sub" font-size="20">1. 出场：凭勒劳虽小，却机警聪明。</text>
+      <text x="36" y="240" class="sub" font-size="20">2. 冲突：县官欺压乡亲、颁布不公。</text>
+      <text x="36" y="270" class="sub" font-size="20">3. 对抗：凭勒劳以巧计戏弄/阻止县官的恶行。</text>
+      <text x="36" y="300" class="sub" font-size="20">4. 结局：正义得伸，乡亲受益，凸显“大小”辩证。</text>
+
+      <g transform="translate(0,360)">
+        <rect x="18" y="0" width="560" height="120" rx="10" ry="10" fill="#FFF9F6" stroke="#E7D0C3" stroke-width="2"/>
+        <text x="36" y="28" class="sub" font-size="20" font-weight="700">动作描写示例</text>
+        <text x="36" y="58" class="sub" font-size="18">“他一跃而起，像小鸟般穿过人群，迅速夺回被抢的粮袋。”（动作表现人物勇气与能力）</text>
+
+        <rect x="600" y="0" width="560" height="120" rx="10" ry="10" fill="#F7FFFF" stroke="#D7EEF6" stroke-width="2"/>
+        <text x="620" y="28" class="sub" font-size="20" font-weight="700">语言描写示例</text>
+        <text x="620" y="58" class="sub" font-size="18">“他说：‘我虽小，可我一定要替乡亲出气。’”（台词呈现性格与信念）</text>
+      </g>
+
+      <text x="24" y="520" class="sub" font-size="26" font-weight="700">人物形象速写</text>
+      <g transform="translate(24,560)" class="sub" font-size="20">
+        <text x="0" y="0">• 凭勒劳：机智、勇敢、正直（小头像右侧）</text>
+        <text x="0" y="40">• 县官：傲慢、贪婪（夸张表情）</text>
+        <text x="0" y="80">• 乡亲：善良、受压（作为群体出现）</text>
+      </g>
+
+      <text x="24" y="720" class="sub" font-size="26" font-weight="700">主题与感悟</text>
+      <text x="24" y="760" class="sub" font-size="20" font-weight="700">“小”不等于“弱”，“大”不等于“强”。人的价值在智慧与正义感。</text>
+      <text x="24" y="800" class="sub" font-size="18">学习要点：把握关键情节复述故事脉络；体会动作与语言描写如何刻画人物；联系生活，思考勇气与智慧的表现。</text>
+
+      <text x="24" y="900" class="sub" font-size="26" font-weight="700">反思题</text>
+      <text x="36" y="940" class="sub" font-size="18">a) 如果你是凭勒劳，你会用什么办法对付县官？写出三个步骤。</text>
+      <text x="36" y="970" class="sub" font-size="18">b) 文中哪个动作描写最打动你？说明原因。</text>
+      <text x="36" y="1000" class="sub" font-size="18">c) 结合生活，举一例“小”做“大”事的人或事。</text>
+
+      <text x="24" y="1060" class="sub" font-size="26" font-weight="700">词语区</text>
+      <text x="36" y="1100" class="sub" font-size="18">机智：聪明且灵活。 辩证：看到事物的两面。 正义：公平、伸张。</text>
+    </g>
+
+    <!-- 右侧插画区 -->
+    <g id="right_col" transform="translate(1320,170)">
+      <rect x="0" y="0" width="720" height="1220" rx="18" ry="18" fill="#FFF8F6" stroke="#E8D4CC" stroke-width="4"/>
+      <text x="30" y="60" class="sub" font-size="22" font-weight="700">插画（示意）</text>
+      <text x="30" y="100" font-size="18" fill="#7FB77E">场景：凭勒劳与县官对峙（小而从容的英雄，背景为被戏弄的县官）</text>
+
+      <g transform="translate(40,140)" stroke="#5A3E36" stroke-width="6" fill="none" stroke-linecap="round">
+        <circle cx="120" cy="220" r="26" fill="#F6D6C8" stroke="#5A3E36" stroke-width="4"/>
+        <line x1="120" y1="246" x2="120" y2="360" />
+        <line x1="120" y1="300" x2="90" y2="360" />
+        <line x1="120" y1="300" x2="150" y2="360" />
+        <rect x="320" y="160" width="220" height="320" rx="20" fill="#FFEFE9" stroke="#5A3E36"/>
+        <circle cx="430" cy="220" r="30" fill="#FFD9C8" stroke="#5A3E36"/>
+        <line x1="430" y1="250" x2="430" y2="360" />
+        <path d="M350 330 q80 30 160 0" stroke="#D95B3C" stroke-width="8" fill="none"/>
+        <path d="M160 200 q80 -40 160 0" stroke="#89CFF0" stroke-width="3" fill="none" opacity="0.9"/>
+      </g>
+
+      <g transform="translate(40,1420)">
+        <rect x="0" y="0" width="220" height="160" rx="12" ry="12" fill="#FFFDF8" stroke="#E8D4CC" stroke-width="3"/>
+        <text x="20" y="30" class="sub" font-size="18">想计策</text>
+
+        <rect x="260" y="0" width="220" height="160" rx="12" ry="12" fill="#F7FFFF" stroke="#D7EEF6" stroke-width="3"/>
+        <text x="280" y="30" class="sub" font-size="18">迅速出手</text>
+
+        <rect x="520" y="0" width="220" height="160" rx="12" ry="12" fill="#FFF8F6" stroke="#E8D4CC" stroke-width="3"/>
+        <text x="540" y="30" class="sub" font-size="18">众人欢呼</text>
+      </g>
+
+      <g transform="translate(420,1700)">
+        <ellipse cx="180" cy="240" rx="90" ry="56" fill="#D95B3C" stroke="#5A3E36" stroke-width="6"/>
+        <text x="40" y="260" font-family="'Microsoft YaHei', sans-serif" font-size="20" fill="#FFF8F6">枣核</text>
+      </g>
+    </g>
+
+    <!-- 底部信息条 -->
+    <g transform="translate(60,2630)">
+      <rect x="0" y="0" width="1980" height="200" rx="10" ry="10" fill="none" stroke="#E0D0C3" stroke-width="2"/>
+      <text x="30" y="82" class="sub" font-size="26">班级：______   姓名：______   日期：______</text>
+      <text x="1580" y="82" font-family="'Microsoft YaHei', sans-serif" font-size="18" fill="#A09A94" text-anchor="end">手绘彩铅风 · 按需打印（300 DPI，含出血）</text>
+    </g>
+
+    <!-- 纸纹遮罩 -->
+    <rect x="0" y="0" width="2100" height="2970" fill="none" filter="url(#grain)" opacity="0.06"/>
+  </g>
+
+  <!-- 裁切线（提示印厂裁切位置：在出血区之外 3mm） -->
+  <!-- 左上 -->
+  <line x1="30" y1="30" x2="80" y2="30" stroke="#000" stroke-width="2"/>
+  <line x1="30" y1="30" x2="30" y2="80" stroke="#000" stroke-width="2"/>
+  <!-- 左下 -->
+  <line x1="30" y1="3000" x2="80" y2="3000" stroke="#000" stroke-width="2"/>
+  <line x1="30" y1="3000" x2="30" y2="2950" stroke="#000" stroke-width="2"/>
+  <!-- 右上 -->
+  <line x1="2130" y1="30" x2="2080" y2="30" stroke="#000" stroke-width="2"/>
+  <line x1="2130" y1="30" x2="2130" y2="80" stroke="#000" stroke-width="2"/>
+  <!-- 右下 -->
+  <line x1="2130" y1="3000" x2="2080" y2="3000" stroke="#000" stroke-width="2"/>
+  <line x1="2130" y1="3000" x2="2130" y2="2950" stroke="#000" stroke-width="2"/>
+</svg>
